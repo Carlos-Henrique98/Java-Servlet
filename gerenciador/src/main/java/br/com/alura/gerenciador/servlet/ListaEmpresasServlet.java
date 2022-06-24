@@ -1,9 +1,9 @@
 package br.com.alura.gerenciador.servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.List;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -19,17 +19,9 @@ public class ListaEmpresasServlet extends HttpServlet {
 
 		Banco banco = new Banco();
 		List<Empresa> lista = banco.getEmpresas();
-		PrintWriter out = response.getWriter();
+		request.setAttribute("empresas", lista);
 
-		out.println("<html><body>");
-		out.println("<ul>");
-
-		for (Empresa empresa : lista) {
-			out.println("<li>" + empresa.getNome() + "</li");
-		}
-
-		out.println("</ul>");
-		out.println("</body></html>");
+		RequestDispatcher rd = request.getRequestDispatcher("/listaEmpresas.jsp");
+		rd.forward(request, response);
 	}
-
 }
