@@ -42,4 +42,9 @@ public class Banco {
 		}
 	}
 
+	public Empresa buscaEmpresaPelaId(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

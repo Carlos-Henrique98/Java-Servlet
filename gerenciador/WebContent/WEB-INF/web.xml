@@ -1,62 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="5.0">
-  <display-name>gerenciador</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-  </welcome-file-list>
-  <servlet>
-    <description></description>
-    <display-name>NovaEmpresaServlet</display-name>
-    <servlet-name>NovaEmpresaServlet</servlet-name>
-    <servlet-class>br.com.alura.gerenciador.servlet.NovaEmpresaServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>NovaEmpresaServlet</servlet-name>
-    <url-pattern>/novaEmpresa</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>NovasEmpresasServlet</display-name>
-    <servlet-name>NovasEmpresasServlet</servlet-name>
-    <servlet-class>br.com.alura.gerenciador.servlet.NovasEmpresasServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>NovasEmpresasServlet</servlet-name>
-    <url-pattern>/NovasEmpresasServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>NovasEmpresaServlet</display-name>
-    <servlet-name>NovasEmpresaServlet</servlet-name>
-    <servlet-class>br.com.alura.gerenciador.servlet.NovasEmpresaServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>NovasEmpresaServlet</servlet-name>
-    <url-pattern>/novasEmpresa</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>ListaEmpresasServlet</display-name>
-    <servlet-name>ListaEmpresasServlet</servlet-name>
-    <servlet-class>br.com.alura.gerenciador.servlet.ListaEmpresasServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>ListaEmpresasServlet</servlet-name>
-    <url-pattern>/listaEmpresas</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>RemoveEmpresaServlet</display-name>
-    <servlet-name>RemoveEmpresaServlet</servlet-name>
-    <servlet-class>br.com.alura.gerenciador.servlet.RemoveEmpresaServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>RemoveEmpresaServlet</servlet-name>
-    <url-pattern>/removeEmpresa</url-pattern>
-  </servlet-mapping>
+	<display-name>gerenciador</display-name>
+	<welcome-file-list>
+		<welcome-file>bem-vindo.html</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+		<servlet-name>OiMundoServlet</servlet-name>
+		<servlet-class>br.com.alura.gerenciador.servlet.OiMundoServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>OiMundoServlet</servlet-name>
+		<url-pattern>/ola</url-pattern>
+	</servlet-mapping>
+	
 </web-app>
